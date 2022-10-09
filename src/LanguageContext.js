@@ -53,8 +53,7 @@ const LanguageProvider = ({ children }) => {
           "For Our Sake To Return Art and Creativity To Its Pioneering and Societal Role, We Always Strive To Produce The Best Audio Or Visual Content, Including The Best Ideas and Quality at The Highest International Level, Comparable To The Best International Studios To Ensure a Unique Experience For The Viewer Or Listener.",
         companySecondGoal:
           "Developing The Marketing System In The Arab World by Using The Latest Discovered Methods and Theories To Facilitate The Marketing Process and Ensure Access To The Target Customer With More Flexibility and Offer The Service or Product In an Innovative and Professional Manner To Obtain The Best Result",
-        designCompany: "Design Company",
-        creativeStudio: "Creative Studio",
+        diamondgroup: "Diamond Innovation Group",
       },
       services: {
         services: "Services",
@@ -68,12 +67,12 @@ const LanguageProvider = ({ children }) => {
         searchService: "Content Writing with Search Engine Optimization",
         development: "Development",
         developmentService: "Website Design and Hosting",
-        art: "Art",
-        artService: "Artistic Production",
+        media: "Media",
+        mediaService: "Media Production",
         audio: "Audio",
         audioService: "Audio Output",
         ads: "ADS",
-        adsService: "TV Advertisments",
+        adsService: "Advertisments",
         apps: "Applications",
         appsService: "Mobile Application Development",
         events: "Events",
@@ -109,6 +108,13 @@ const LanguageProvider = ({ children }) => {
         goBackText: "You can go back to the Main Page by clicking the button.",
         goToHome: "Go To Homepage",
       },
+      numbers: {
+        num1: "(+02)0225259113",
+        num2: "(+02)0225259114",
+        num3: "(+02)01142655491",
+        num4: "(+02)01155559829",
+        num5: "(+966)557711100",
+      },
     };
   } else {
     lang = {
@@ -129,7 +135,7 @@ const LanguageProvider = ({ children }) => {
         aboutUs: "من نحن",
         ourCompany: "شركتنا",
         aboutCompany:
-          ".تعد مجموعة شركات الابتكار الماسي متخصصة في الانتاج الفني المرئي و المسموع و اكتشاف المواهب الفنية و تبنيها و تطويرها و خدمات التسويق والاعلان و ابتكار الهوية التجارية بالاضافة الى حلول البرمجة و الويب",
+          "تعد مجموعة شركات الابتكار الماسي متخصصة في الانتاج الفني المرئي و المسموع و اكتشاف المواهب الفنية و تبنيها و تطويرها و خدمات التسويق والاعلان و ابتكار الهوية التجارية بالاضافة الى حلول البرمجة و الويب.",
         ourVision: "رؤيتنا",
         companyVision:
           "خلق منظومة تسويقية عربية متطوره تنتج محتوى مبدع ينافس المحتوى العالمي و تواكب اخر التقنيات التكنولوجية و تعمل كآداه قوية للتأثير و الدفع للامام.",
@@ -137,9 +143,8 @@ const LanguageProvider = ({ children }) => {
         companyFirstGoal:
           "حرصاً منا على عودة الفن و الابداع الى دوره الريادي و المجتمعي، نسعى دائماً لانتاج افضل المحتويات المرئية او المسموعة متضمنة الافكار و جوده على اعلى مستوى عالمي تضاهي افضل الاستوديوهات العالمية لضمان تجربة فريدة للمشاهد او المستمع.",
         companySecondGoal:
-          "تطوير منظومة التسويق بالوطن العربي عن طريق استخدام احدث الوسائل و النظريات المكتشفة لتسهيل العملية التسويقية و ضمان الوصول الى العميل المستهدف بمرونة اكثر و عرض الخدمة او المنتج بشكل مبتكر و احترافي للحصول على افضل نتيجة",
-        designCompany: "شركة تصميم",
-        creativeStudio: "استوديو الإبداعية",
+          "تطوير منظومة التسويق بالوطن العربي عن طريق استخدام احدث الوسائل و النظريات المكتشفة لتسهيل العملية التسويقية و ضمان الوصول الى العميل المستهدف بمرونة اكثر و عرض الخدمة او المنتج بشكل مبتكر و احترافي للحصول على افضل نتيجة.",
+        diamondgroup: "مجموعة شركات الابتكار الماسي",
       },
       services: {
         services: "الخدمات",
@@ -153,12 +158,12 @@ const LanguageProvider = ({ children }) => {
         searchService: "كتابة المحتوى و SEO",
         development: "تصميم",
         developmentService: "تصميم و استضافة المواقع",
-        art: "فن",
-        artService: "الانتاج الفني",
+        media: "وسائل الإعلام",
+        mediaService: "الإنتاج الإعلامي",
         audio: "الصوت",
         audioService: "الانتاج الصوتي",
         ads: "الاعلانات",
-        adsService: "الاعلانات التلفزيونية",
+        adsService: "الاعلانات",
         apps: "تطبيقات",
         appsService: "تصميم تطبيقات الهاتف",
         events: "مؤتمرات و حفلات",
@@ -192,6 +197,13 @@ const LanguageProvider = ({ children }) => {
           "نحن آسفون ولكن يبدو أن الصفحة التي تبحث عنها لا يمكن العثور عليها. نحن نعمل على حلها وسنصلحها في أسرع وقت ممكن.",
         goBackText: "يمكنك العودة إلى الصفحة الرئيسية بالنقر فوق الزر.",
         goToHome: "اذهب الى الصحفية الرئيسية",
+      },
+      numbers: {
+        num1: "(+٠٢)٠٢٢٥٢٥٩١١٣",
+        num2: "(+٠٢)٠٢٢٥٢٥٩١١٤",
+        num3: "(+٠٢)٠١١٤٢٦٥٥٤٩١",
+        num4: "(+٠٢)٠١١٥٥٥٥٩٨٢٩",
+        num5: "(+٩٦٦)٥٥٧٧١١١٠٠",
       },
     };
   }

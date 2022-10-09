@@ -33,8 +33,8 @@ const Index7Slider = ({ lang, language }) => {
     slidesToShow: 1,
     infinite: true,
     autoplay: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: null,
+    prevArrow: null,
     responsive: [
       {
         breakpoint: 1200,
@@ -60,33 +60,13 @@ const Index7Slider = ({ lang, language }) => {
     <Slider className="owl-slider owl-carousel owl-theme" {...settings}>
       <div className="item slide-item">
         <div className="slide-item-img">
-          <img src={Slider5} className="w-100" alt="" />
-        </div>
-
-        <div className="slide-content overlay-black-dark">
-          <div className="slide-content-box container">
-            <div className="max-w600 text-white ">
-              <h2 className="dz-title">
-                {lang.aboutus.designCompany} <br />
-              </h2>
-              <h2 className="dz-title">
-                <DiamondIcon style={{ color: "#00ffff" }} />
-                <DiamondIcon style={{ color: "#00ffff" }} />
-                <DiamondIcon style={{ color: "#00ffff" }} />
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="item slide-item">
-        <div className="slide-item-img">
           <img src={Slider4} className="w-100" alt="" />
         </div>
         <div className="slide-content overlay-black-dark">
           <div className="slide-content-box container">
-            <div className="max-w600 text-white justify-content-center">
+            <div className="text-white justify-content-center">
               <h2 className="dz-title">
-                {lang.aboutus.creativeStudio}
+                {lang.aboutus.diamondgroup}
                 <br />
               </h2>
               <h2 className="dz-title">

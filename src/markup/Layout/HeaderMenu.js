@@ -18,22 +18,22 @@ const HeaderMenu = ({
             {lang.nav.home}
           </Link>
         </li>
-        <li>
+        <li className="active">
           <Link to={"#"} onClick={handleScrollToAbout}>
             {lang.nav.about}
           </Link>
         </li>
-        <li>
+        <li className="active">
           <Link to={"#"} onClick={handleScrollToServices}>
             {lang.nav.ourservices}
           </Link>
         </li>
-        <li>
+        <li className="active">
           <Link to={"#"} onClick={handleScrollToContact}>
             {lang.nav.contact}
           </Link>
         </li>
-        <li>
+        <li className="active">
           <Link to={"#"}>
             {lang.nav.language} <i className="fa fa-chevron-down"></i>{" "}
           </Link>
@@ -44,16 +44,7 @@ const HeaderMenu = ({
                 className="dez-page"
                 onClick={() => changeLanguage("english")}
               >
-                English
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={"#"}
-                className="dez-page"
-                onClick={() => changeLanguage("english")}
-              >
-                العربية
+                {language === "english" ? "العربية" : "English"}
               </Link>
             </li>
           </ul>

@@ -52,7 +52,7 @@ const Footer = ({ slider, about, services, contact, lang, language }) => {
 
               <div className="col-lg-6 col-md-6 col-sm-6 footer-col-4">
                 <div className="widget widget_getintuch">
-                  <h5 className="m-b30 text-white ">Contact us</h5>
+                  <h5 className="m-b30 text-white ">{lang.nav.contact}</h5>
                   <ul>
                     <li>
                       <i className="ti-location-pin"></i>

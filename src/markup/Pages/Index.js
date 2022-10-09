@@ -10,7 +10,6 @@ import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
 import EventOutlinedIcon from "@mui/icons-material/EventOutlined";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
 import TvOutlinedIcon from "@mui/icons-material/TvOutlined";
-import VolumeUpOutlinedIcon from "@mui/icons-material/VolumeUpOutlined";
 import AccessibilityNewOutlinedIcon from "@mui/icons-material/AccessibilityNewOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import ManageSearchOutlinedIcon from "@mui/icons-material/ManageSearchOutlined";
@@ -18,6 +17,8 @@ import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlin
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
 import DiamondIcon from "@mui/icons-material/Diamond";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
+import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 
 import bg23 from "./../../images/background/bg23.png";
 
@@ -33,62 +34,74 @@ const Index = () => {
 
   const wrpaerBlog = [
     {
-      image: <EqualizerOutlinedIcon style={{ fontSize: 50 }} />,
+      image: (
+        <EqualizerOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />
+      ),
       title: lang.lang.services.marketing,
       desc: lang.lang.services.marketingService,
     },
     {
-      image: <ShareOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <ShareOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.socialMedia,
       desc: lang.lang.services.socialMediaService,
     },
     {
-      image: <BusinessCenterOutlinedIcon style={{ fontSize: 50 }} />,
+      image: (
+        <BusinessCenterOutlinedIcon
+          style={{ fontSize: 50, color: "#0E4659" }}
+        />
+      ),
       title: lang.lang.services.identities,
       desc: lang.lang.services.identitiesService,
     },
     {
-      image: <ManageSearchOutlinedIcon style={{ fontSize: 50 }} />,
+      image: (
+        <ManageSearchOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />
+      ),
       title: lang.lang.services.search,
       desc: lang.lang.services.searchService,
     },
     {
-      image: <CodeOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <CodeOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.development,
       desc: lang.lang.services.developmentService,
     },
     {
-      image: <AccessibilityNewOutlinedIcon style={{ fontSize: 50 }} />,
-      title: lang.lang.services.art,
-      desc: lang.lang.services.artService,
+      image: <SubscriptionsIcon style={{ fontSize: 50, color: "#0E4659" }} />,
+      title: lang.lang.services.media,
+      desc: lang.lang.services.mediaService,
     },
     {
-      image: <VolumeUpOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <MusicNoteIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.audio,
       desc: lang.lang.services.audioService,
     },
     {
-      image: <TvOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <TvOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.ads,
       desc: lang.lang.services.adsService,
     },
     {
-      image: <AppShortcutOutlinedIcon style={{ fontSize: 50 }} />,
+      image: (
+        <AppShortcutOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />
+      ),
       title: lang.lang.services.apps,
       desc: lang.lang.services.appsService,
     },
     {
-      image: <EventOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <EventOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.events,
       desc: lang.lang.services.eventsService,
     },
     {
-      image: <VideoLibraryOutlinedIcon style={{ fontSize: 50 }} />,
+      image: (
+        <VideoLibraryOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />
+      ),
       title: lang.lang.services.video,
       desc: lang.lang.services.videoService,
     },
     {
-      image: <RadioOutlinedIcon style={{ fontSize: 50 }} />,
+      image: <RadioOutlinedIcon style={{ fontSize: 50, color: "#0E4659" }} />,
       title: lang.lang.services.radio,
       desc: lang.lang.services.radioService,
     },
@@ -196,7 +209,7 @@ const Index = () => {
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
                       <h5 className="title-small">{lang.aboutus.aboutUs}</h5>
-                      <h2 className="title-head m-b0">
+                      <h2 className="title-head m-b0 text-secondry">
                         {lang.aboutus.ourCompany}
                       </h2>
                       <DiamondIcon style={{ color: "#00ffff" }} />
@@ -217,7 +230,7 @@ const Index = () => {
                   </div>
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
-                      <h2 className="title-head m-b0">
+                      <h2 className="title-head m-b0 text-secondry">
                         {lang.aboutus.ourVision}
                       </h2>
                       <DiamondIcon style={{ color: "#00ffff" }} />
@@ -238,7 +251,7 @@ const Index = () => {
                   </div>
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
-                      <h2 className="title-head m-b0">
+                      <h2 className="title-head m-b0 text-secondry">
                         {lang.aboutus.ourGoal}
                       </h2>
                       <DiamondIcon style={{ color: "#00ffff" }} />
@@ -286,7 +299,7 @@ const Index = () => {
                         key={index}
                       >
                         <div className="icon-bx-wraper our-service center">
-                          <div className="icon-lg text-primary m-b20">
+                          <div className="icon-lg text-secondary m-b20">
                             <Link to={"#"} className="icon-cell">
                               {data.image}
                             </Link>
@@ -455,11 +468,13 @@ const Index = () => {
                         </div>
                         <div className="m-b10">
                           <h4>{lang.contactus.telephone}</h4>
-                          <h5>(+02)0225259113</h5>
-                          <h5>(+02)0225259114</h5>
-                          <h5>(+02)01142655491</h5>
-                          <h5>(+02)01155559829</h5>
-                          <h5>(+966)557711100</h5>
+                          <div style={{ direction: "ltr" }}>
+                            <h5>{lang.numbers.num1}</h5>
+                            <h5>{lang.numbers.num2}</h5>
+                            <h5>{lang.numbers.num3}</h5>
+                            <h5>{lang.numbers.num4}</h5>
+                            <h5>{lang.numbers.num5}</h5>
+                          </div>
                         </div>
                         <div className="m-b10">
                           <ul className="list-inline socail-icon m-t15 m-a0">

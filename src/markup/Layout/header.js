@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "./../../images/logo.png";
+import logo from "./../../images/Di.png";
 import logo2 from "./../../images/logo-black.png";
 import HeaderMenu from "./HeaderMenu";
 
-const Header = ({
+const Header2 = ({
   slider,
   about,
   services,
@@ -57,18 +57,16 @@ const Header = ({
       }, 100);
     };
   }, []);
+
   return (
     <>
       <header
-        className="site-header header-transparent mo-left"
+        className="site-header header mo-left header-style-1"
         id="fix-header"
       >
         <div className="sticky-header main-bar-wraper navbar-expand-lg">
-          <div className="main-bar clearfix">
-            <div
-              className="container clearfix"
-              style={{ display: language === "english" ? "block" : "flex" }}
-            >
+          <div className="main-bar clearfix  bg-primary">
+            <div className="container clearfix">
               <div className="logo-header mostion">
                 <Link to={"./"} className="dez-page">
                   <img src={logo} alt="" />
@@ -95,7 +93,7 @@ const Header = ({
               >
                 <div className="logo-header mostion d-md-block d-lg-none">
                   <Link to={"./"} className="dez-page">
-                    <img src={logo2} alt="" />
+                    <img src={logo} alt="" />
                   </Link>
                 </div>
                 {/*  Header Menu Contents  */}
@@ -117,5 +115,4 @@ const Header = ({
     </>
   );
 };
-
-export default Header;
+export default Header2;

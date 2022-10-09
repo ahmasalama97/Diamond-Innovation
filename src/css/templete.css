@@ -1315,7 +1315,7 @@ footer .widget_services .list-2 li:before{
 		color:#273272;
 	}
 	.site-header.header-style-1 .header-nav .nav > li .sub-menu li a{
-		color:#101042;
+		color:#273272;
 	}	
 }
 
@@ -2462,7 +2462,7 @@ svg.radial-progress:nth-of-type(6n+1) circle {
 	font-size: 13px;
 }
 .product-box .rating-star li.active{
-	color:#ff8a73;
+	color:#0E4659;
 }
 .product-box .product-details{
 	padding: 20px 10px 20px 15px;
