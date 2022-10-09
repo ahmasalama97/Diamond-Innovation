@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../../images/Di.png";
 import icon from "./../../images/Di-icon.png";
@@ -15,16 +15,27 @@ const Header2 = ({
 }) => {
   const [isMobile, setIsMobile] = useState(false);
 
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  const handleWindowResize = useCallback((event) => {
+    setWindowSize(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [handleWindowResize]);
+
+  useEffect(() => {
+    if (windowSize < 720) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  }, [isMobile]);
+  }, [windowSize, setIsMobile, isMobile]);
 
   const handleScrollToSlider = () => {
     slider.current?.scrollIntoView({ behavior: "smooth" });
