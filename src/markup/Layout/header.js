@@ -1,7 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./../../images/Di.png";
-import logo2 from "./../../images/logo-black.png";
+import icon from "./../../images/Di-icon.png";
 import HeaderMenu from "./HeaderMenu";
 
 const Header2 = ({
@@ -13,6 +13,19 @@ const Header2 = ({
   lang,
   changeLanguage,
 }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  }, [isMobile]);
+
   const handleScrollToSlider = () => {
     slider.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -61,15 +74,22 @@ const Header2 = ({
   return (
     <>
       <header
-        className="site-header header mo-left header-style-1"
+        className="site-header header mo-left header-style-1 header-transparent"
         id="fix-header"
       >
         <div className="sticky-header main-bar-wraper navbar-expand-lg">
-          <div className="main-bar clearfix  bg-primary">
-            <div className="container clearfix">
+          <div className="main-bar clearfix">
+            <div
+              className="container clearfix"
+              style={{ display: isMobile ? "block" : "flex" }}
+            >
               <div className="logo-header mostion">
                 <Link to={"./"} className="dez-page">
-                  <img src={logo} alt="" />
+                  {isMobile ? (
+                    <img src={icon} alt="" />
+                  ) : (
+                    <img src={logo} alt="" />
+                  )}
                 </Link>
               </div>
 
@@ -105,6 +125,7 @@ const Header2 = ({
                   changeLanguage={changeLanguage}
                   lang={lang}
                   language={language}
+                  isMobile={isMobile}
                 />
                 {/*  Header Menu Contents End */}
               </div>

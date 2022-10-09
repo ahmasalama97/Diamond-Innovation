@@ -10,7 +10,6 @@ import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
 import EventOutlinedIcon from "@mui/icons-material/EventOutlined";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
 import TvOutlinedIcon from "@mui/icons-material/TvOutlined";
-import AccessibilityNewOutlinedIcon from "@mui/icons-material/AccessibilityNewOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import ManageSearchOutlinedIcon from "@mui/icons-material/ManageSearchOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";

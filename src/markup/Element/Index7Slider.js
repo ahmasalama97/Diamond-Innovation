@@ -1,30 +1,6 @@
 import DiamondIcon from "@mui/icons-material/Diamond";
 import Slider from "react-slick";
-
-import Slider5 from "./../../images/main-slider/slide5.jpg";
 import Slider4 from "./../../images/main-slider/slide4.jpg";
-
-const SampleNextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div className="owl-nav">
-      <div className="owl-next flaticon-right-arrow" onClick={onClick} />
-    </div>
-  );
-};
-
-const SamplePrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div className="owl-nav">
-      <div
-        className=" owl-prev flaticon-left-arrow"
-        onClick={onClick}
-        style={{ zIndex: 1 }}
-      />
-    </div>
-  );
-};
 
 const Index7Slider = ({ lang, language }) => {
   let settings = {
