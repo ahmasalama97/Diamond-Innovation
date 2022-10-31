@@ -32,7 +32,7 @@ const LanguageProvider = ({ children }) => {
         about: "About Us",
         ourservices: "Our Services",
         contact: "Contact Us",
-        language: "Language",
+        language: "اللغة",
       },
       aboutus: {
         returnArt: "Return Art To",
@@ -109,11 +109,11 @@ const LanguageProvider = ({ children }) => {
         goToHome: "Go To Homepage",
       },
       numbers: {
-        num1: "(+02)0225259113",
-        num2: "(+02)0225259114",
-        num3: "(+02)01142655491",
-        num4: "(+02)01155559829",
-        num5: "(+966)557711100",
+        num1: "+020225259113",
+        num2: "+020225259114",
+        num3: "+0201142655491",
+        num4: "+0201155559829",
+        num5: "+966557711100",
       },
     };
   } else {
@@ -123,7 +123,7 @@ const LanguageProvider = ({ children }) => {
         about: "من نحن",
         ourservices: "خدماتنا",
         contact: "تواصل معنا",
-        language: "اللغة",
+        language: "Language",
       },
       aboutus: {
         returnArt: "عودة الفن و الابداع الى",
@@ -176,7 +176,7 @@ const LanguageProvider = ({ children }) => {
       contactus: {
         address: "العنوان",
         egypt: "مصر",
-        egyptAddressFirstSection: "7A كورنيش النيل - المعادي",
+        egyptAddressFirstSection: "٧أ كورنيش النيل - المعادي",
         egyptAddressSecondSection: "برج دالة الدور ال ٣٤",
         emirates: "الإمارات العربية المتحدة",
         emiratesAddressFirstSection: "مركز دبي للتجارة العالمي",
@@ -199,11 +199,11 @@ const LanguageProvider = ({ children }) => {
         goToHome: "اذهب الى الصحفية الرئيسية",
       },
       numbers: {
-        num1: "(+٠٢)٠٢٢٥٢٥٩١١٣",
-        num2: "(+٠٢)٠٢٢٥٢٥٩١١٤",
-        num3: "(+٠٢)٠١١٤٢٦٥٥٤٩١",
-        num4: "(+٠٢)٠١١٥٥٥٥٩٨٢٩",
-        num5: "(+٩٦٦)٥٥٧٧١١١٠٠",
+        num1: "+٠٢٠٢٢٥٢٥٩١١٣",
+        num2: "+٠٢٠٢٢٥٢٥٩١١٤",
+        num3: "+٠٢٠١١٤٢٦٥٥٤٩١",
+        num4: "+٠٢٠١١٥٥٥٥٩٨٢٩",
+        num5: "+٩٦٦٥٥٧٧١١١٠٠",
       },
     };
   }

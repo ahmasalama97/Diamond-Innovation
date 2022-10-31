@@ -4,7 +4,6 @@ import Header from "../Layout/header";
 import Footer from "../Layout/Footer";
 import Index7Slider from "../Element/Index7Slider";
 import { LanguageConsumer, LanguageContext } from "../../LanguageContext";
-
 import RadioOutlinedIcon from "@mui/icons-material/RadioOutlined";
 import VideoLibraryOutlinedIcon from "@mui/icons-material/VideoLibraryOutlined";
 import EventOutlinedIcon from "@mui/icons-material/EventOutlined";
@@ -15,7 +14,6 @@ import ManageSearchOutlinedIcon from "@mui/icons-material/ManageSearchOutlined";
 import BusinessCenterOutlinedIcon from "@mui/icons-material/BusinessCenterOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
-import DiamondIcon from "@mui/icons-material/Diamond";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 
@@ -162,7 +160,13 @@ const Index = () => {
                         </span>
                       </div>
                       <div className="icon-content">
-                        <h3 className="dez-tilte">
+                        <h3
+                          className="dez-tilte"
+                          style={{
+                            textAlign:
+                              language === "english" ? "left" : "right",
+                          }}
+                        >
                           <span className="font-weight-300">
                             {lang.aboutus.returnArt}{" "}
                           </span>{" "}
@@ -177,7 +181,13 @@ const Index = () => {
                         </span>
                       </div>
                       <div className="icon-content">
-                        <h3 className="dez-tilte">
+                        <h3
+                          className="dez-tilte"
+                          style={{
+                            textAlign:
+                              language === "english" ? "left" : "right",
+                          }}
+                        >
                           <span className="font-weight-300">
                             {lang.aboutus.marketingSystem}
                           </span>
@@ -192,7 +202,13 @@ const Index = () => {
                         </span>
                       </div>
                       <div className="icon-content">
-                        <h3 className="dez-tilte">
+                        <h3
+                          className="dez-tilte"
+                          style={{
+                            textAlign:
+                              language === "english" ? "left" : "right",
+                          }}
+                        >
                           <span className="font-weight-300">
                             {lang.aboutus.bestStudios}
                           </span>
@@ -207,13 +223,15 @@ const Index = () => {
                 <div className="container m-t30">
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
-                      <h5 className="title-small">{lang.aboutus.aboutUs}</h5>
-                      <h2 className="title-head m-b0 text-secondry">
+                      <h5 className="title-small" style={styles.title}>
+                        {lang.aboutus.aboutUs}
+                      </h5>
+                      <h2
+                        className="title-head m-b0 text-secondry"
+                        style={styles.subTitle}
+                      >
                         {lang.aboutus.ourCompany}
                       </h2>
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
                     </div>
                   </div>
                   <div className="row">
@@ -229,12 +247,12 @@ const Index = () => {
                   </div>
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
-                      <h2 className="title-head m-b0 text-secondry">
+                      <h2
+                        className="title-head m-b0 text-secondry"
+                        style={styles.subTitle}
+                      >
                         {lang.aboutus.ourVision}
                       </h2>
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
                     </div>
                   </div>
                   <div className="row">
@@ -250,12 +268,12 @@ const Index = () => {
                   </div>
                   <div className="row">
                     <div className="col-lg-12 section-head text-center">
-                      <h2 className="title-head m-b0 text-secondry">
+                      <h2
+                        className="title-head m-b0 text-secondry"
+                        style={styles.subTitle}
+                      >
                         {lang.aboutus.ourGoal}
                       </h2>
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
-                      <DiamondIcon style={{ color: "#00ffff" }} />
                     </div>
                   </div>
                   <div className="row">
@@ -286,8 +304,12 @@ const Index = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12 section-head text-center">
-                    <h5 className="title-small">{lang.services.services}</h5>
-                    <h2 className="title-head m-b0">{lang.nav.ourservices}</h2>
+                    <h5 className="title-small" style={styles.title}>
+                      {lang.services.services}
+                    </h5>
+                    <h2 className="title-head m-b0" style={styles.subTitle}>
+                      {lang.nav.ourservices}
+                    </h2>
                   </div>
                 </div>
                 <div className="row">
@@ -328,96 +350,6 @@ const Index = () => {
                 <div className="container">
                   <div className="row d-flex align-items-center">
                     <div className="col-lg-7">
-                      {/* <div className="">
-                      <div className="support-form support-box-form bg-white">
-                        <div className="support-title m-b30">
-                          <h6 className="text-uppercase font-weight-500 m-b10">
-                            Support
-                          </h6>
-                          <h2 className="font-40 font-weight-400 m-tb0">
-                            Need Help?
-                          </h2>
-                        </div>
-                        <div className="dezPlaceAni">
-                          <div className="dzFormMsg"></div>
-                          <form method="post" className="" action="">
-                            <input
-                              type="hidden"
-                              value="Contact"
-                              name="dzToDo"
-                            />
-                            <div className="row">
-                              <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div className="form-group">
-                                  <div className="input-group">
-                                    <label>Your Name</label>
-                                    <input
-                                      name="dzName"
-                                      type="text"
-                                      required=""
-                                      className="form-control"
-                                      placeholder=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                                <div className="form-group">
-                                  <div className="input-group">
-                                    <label>Phone</label>
-                                    <input
-                                      name="dzOther[Phone]"
-                                      type="text"
-                                      required=""
-                                      className="form-control"
-                                      placeholder=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="form-group">
-                                  <div className="input-group">
-                                    <label>Your Email Address</label>
-                                    <input
-                                      name="dzEmail"
-                                      type="email"
-                                      className="form-control"
-                                      required=""
-                                      placeholder=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-                                <div className="form-group">
-                                  <div className="input-group">
-                                    <label>Your Message...</label>
-                                    <textarea
-                                      name="dzMessage"
-                                      rows="4"
-                                      className="form-control"
-                                      required=""
-                                      placeholder=""
-                                    ></textarea>
-                                  </div>
-                                </div>
-                              </div>
-                              <div className="col-lg-12 col-md-12 col-sm-12">
-                                <button
-                                  name="submit"
-                                  type="submit"
-                                  value="Submit"
-                                  className="site-button radius-xl button-md m-t10"
-                                >
-                                  Submit Now
-                                </button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div> */}
                       <iframe
                         title="companyLocation"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.6205482759174!2d31.245006514955097!3d29.961591329437073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847ee956b07bb%3A0xae59dd11485ca2bd!2sAlfa%20Market!5e0!3m2!1sen!2seg!4v1664981738198!5m2!1sen!2seg"
@@ -515,5 +447,14 @@ const Index = () => {
       )}
     </LanguageConsumer>
   );
+};
+const styles = {
+  title: {
+    fontSize: 35,
+    marginBottom: 35,
+  },
+  subTitle: {
+    fontSize: 25,
+  },
 };
 export default Index;

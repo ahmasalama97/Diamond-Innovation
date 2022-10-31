@@ -1,8 +1,7 @@
-import DiamondIcon from "@mui/icons-material/Diamond";
 import Slider from "react-slick";
-import Slider4 from "./../../images/main-slider/slide4.jpg";
+import Slider4 from "./../../images/cover-youtube.png";
 
-const Index7Slider = ({ lang, language }) => {
+const Index7Slider = ({ lang }) => {
   let settings = {
     arrows: true,
     dots: false,
@@ -38,18 +37,16 @@ const Index7Slider = ({ lang, language }) => {
         <div className="slide-item-img">
           <img src={Slider4} className="w-100" alt="" />
         </div>
-        <div className="slide-content overlay-black-dark">
+        <div className="slide-content">
           <div className="slide-content-box container">
             <div className="text-white justify-content-center">
-              <h2 className="dz-title">
+              {/* <h2
+                className="dz-title"
+                style={{ background: "#000", opacity: 0.1 }}
+              >
                 {lang.aboutus.diamondgroup}
                 <br />
-              </h2>
-              <h2 className="dz-title">
-                <DiamondIcon style={{ color: "#00ffff" }} />
-                <DiamondIcon style={{ color: "#00ffff" }} />
-                <DiamondIcon style={{ color: "#00ffff" }} />
-              </h2>
+              </h2> */}
             </div>
           </div>
         </div>

@@ -11113,9 +11113,12 @@ footer.footer-white .footer-bottom a {
     margin-top: 0;
 }
 .title-small {
-    display: block;
-    color: #494949;
-    margin-bottom: 15px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 50px;
+    opacity: .7;
+    letter-spacing: 3px;
 }
 .section-head p {
     padding-top: 10px;

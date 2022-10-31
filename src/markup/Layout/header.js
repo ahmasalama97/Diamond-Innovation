@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "./../../images/Di.png";
-import icon from "./../../images/Di-icon.png";
+import logo from "./../../images/DIAsset.png";
 import HeaderMenu from "./HeaderMenu";
 
 const Header2 = ({
@@ -96,11 +95,7 @@ const Header2 = ({
             >
               <div className="logo-header mostion">
                 <Link to={"./"} className="dez-page">
-                  {isMobile ? (
-                    <img src={icon} alt="" />
-                  ) : (
-                    <img src={logo} alt="" />
-                  )}
+                  <img src={logo} alt="" />
                 </Link>
               </div>
 
